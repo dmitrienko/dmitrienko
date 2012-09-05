@@ -17,8 +17,13 @@ body {
     min-height: 100%;
 }
 
-ul, ol, dl { 
+ul, dl { 
 	list-style: circle inside;
+	padding: 0;
+	margin: 10px 0 0 10px;
+}
+
+ol { 	
 	padding: 0;
 	margin: 10px 0 0 10px;
 }
