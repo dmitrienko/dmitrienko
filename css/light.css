@@ -152,12 +152,6 @@ a:active, a:focus {
 	background: #eeeeee;
 }
 
-.menu__spacer {
-	display: none;
-    height: 46px;
-	width: 100%;
-}
-
 .menu__top {
 	font-size: 130%;
     font-weight: 300;
@@ -261,3 +255,23 @@ a:active, a:focus {
 	text-align: center;
 }
 /* ~~ END OF FOOTER ~~ */
+
+/* ~~ START EASTER EGG ~~ */
+.leprobear {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 0px;
+	z-index: 666;
+}
+
+.leprobear__img {
+	display: block;
+}
+
+.lepra {
+	position:fixed; 
+	top: 0; 
+	right: 0;
+}
+/* ~~ END EASTER EGG ~~ */
