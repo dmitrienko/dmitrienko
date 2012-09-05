@@ -72,6 +72,10 @@ a img {
 	border: none;
 }
 
+a, a img, a:link, a:visited, a:hover, a:active, a:focus, h2, h2:hover {
+	cursor: pointer;
+}
+
 a:link, a:visited {
 	color: #0090d9;
 	text-decoration: none; 
