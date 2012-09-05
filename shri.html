@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="Анкета для Школы разработки интерфейсов" name="description">
+<meta content="Яндекс, Школа разработки интерфейсов, анкета, Юрий Дмитриенко" name="keywords">
+<title>Yuri Dmitrienko</title>
+<link media="screen" title="light" href="css/light.css" type="text/css" rel="stylesheet">
+<link media="screen" title="dark" href="css/dark.css" type="text/css" rel="alternate stylesheet">
+<link media="print" href="css/print.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<script src="js/jquery-1.8.1.min.js" type="text/javascript"></script>
+<script src="js/switcher.js" type="text/javascript"><!--mce:0--></script>
+
+<style>
+.leprobear {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 0px;
+}
+
+.leprobear__show {
+	display: block;
+}
+
+.leprobear__img {
+	display: block;
+}
+
+.lepra {
+	position:fixed; 
+	top: 0; 
+	right: 0;
+}
+</style>
+</head>
+
+<body>
+<noscript>
+  <div align="center" class="noscript">
+  <p>
+    У Вас отключен JavaScript.
+  </p>
+  <p>
+    <a href="java.html" target="_blank">Как включить JavaScript</a>
+  </p>
+  </div>
+</noscript>
+
+<script type="text/javascript">
+var menu__top = 0;
+$(document).ready(function(){
+  menu__top = $('.menu').offset().top + 20;
+  $("#menu__spacer").css('height',($('.menu').height()*1 + 20));
+  });
+  $(window).scroll(function() {
+  if ($(this).scrollTop() > menu__top)
+    {
+    $('.menu').addClass("menu__top");
+    $("#menu__spacer").show();
+    }else
+    {
+    $("#menu__spacer").hide();
+    $('.menu').removeClass("menu__top");
+    }
+}); 
+</script>
+
+<div class="container">
+
+<div class="header noprint">
+    <div class="header__style">
+      <a href="#" name="light" class="header__style__link styleswitch" onclick="setActiveStyleSheet('light'); return false;" rel="light">Light</a>
+      &nbsp;&nbsp;&nbsp;
+      <a href="#" name="dark" class="header__style__link styleswitch" onclick="setActiveStyleSheet('dark'); return false;" rel="dark">Dark</a>
+    </div>
+  <img src="img/header.png" alt="Yuri_Dmitrienko" name="Yuri_Dmitrienko" width="960" height="85"  />
+</div><!-- END .header -->  
+  
+  <!--<div id="menu__spacer"></div>-->
+  
+  <nav class="noprint">
+    <div class="menu noprint">
+      <table cellpadding="0" cellspacing="0" width="960" align="center">
+      <tbody>
+        <tr align="center">
+          <td width="320">
+            <div class="menu__item">
+              <a href="#general">Общие вопросы</a>
+            </div>
+          </td>
+          <td width="320">
+            <div class="menu__item">
+              <a href="#development">Опыт разработки</a>
+            </div>
+          </td>
+          <td width="320" class="last">
+            <div class="menu__item">
+              <a href="#technical">Технические задания</a>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+  </nav>
+  
+  <div class="content">
+  <h1>Анкета Школы разработки интерфейсов</h1>
+  
+  <div class="content__layout"><!-- GENERAL -->
+    <h2><a name="general"><img src="img/icons/contacts.png" width="26" height="26" alt="info" title="info" /> Общие вопросы</a></h2>
+    <div class="content__layout__include">
+      <h3>Дмитриенко Юрий Владимирович</h3>
+      <div class="content__layout__include-answer">
+        26 лет (25.05.1986)
+      </div>
+      <div class="content__layout__include-answer">
+        <div class="content__layout__include-answer_nm">
+          МГУ им.М.В.Ломоносова`08
+        </div>
+        <div class="content__layout__include-answer_nm">
+          Почвоведения, специалист
+        </div>
+      </div>
+      <div class="content__layout__include-answer">
+        Английский язык: intermediate
+      </div>
+      <div class="content__layout__include-answer">
+        <div class="content__layout__include-answer_nm">
+          Москва
+        </div>
+        <div class="content__layout__include-answer_nm">
+          <a href="mailto:dmitr86@gmail.com" target="_blank" title="Написать письмо">dmitr86@gmail.com</a>
+        </div>
+        <div class="content__layout__include-answer_nm">
+          +7-926-587-23-96
+        </div>
+    </div>
+      <div class="content__layout__include-answer">
+        <a href="http://www.facebook.com/ydmitrienko" target="_blank"><img src="img/icons/facebook.png" width="26" height="26" alt="fb" title="fecebook" /></a>
+        <a href="https://plus.google.com/u/0/115044704930962561913/posts" target="_blank"><img src="img/icons/google_plus.png" width="26" height="26" alt="gp" title="google_plus" /></a>
+        <a href="http://vk.com/dmitrienko" target="_blank"><img src="img/icons/vkontakte.png" width="26" height="26" alt="vk" title="vkontakte" /></a>
+        <a href="http://dmitr.35photo.ru/" target="_blank"><img src="img/icons/instagram.png" width="26" height="26" alt="photo" title="photo" /></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content__layout"><!-- EXPERIENCE -->
+    <h2><a name="development"><img src="img/icons/support.png" width="26" height="26" alt="dev" title="development" /> Опыт разработки</a></h2>
+    <div class="content__layout__include">
+      <h3>Ezoplanet.ru</h3>
+      <div class="content__layout__include-answer">
+        Редизайн и пересмотр логики работы интернет-магазина <a href="http://www.ezoplanet.ru/" target="_blank">Ezoplanet.ru</a> (CMS - Bitrix). Был полностью изменён внешний вид, переписаны старые скрипты и написаны новые. Изменена логика заказа как для зарегистрированных клиентов, так и для новых посетителей. Заново свёрстаны транзакционные письма, а так же event-овые рассылки. Сфотографировано и обработано более 500 фотографий. В результате, процент конверсии заказа увеличился в 4 раза. Но работа не была завершена, т.к. перебросили на другой, более прибыльный и важный проект.
+      </div>
+      <div class="content__layout__include-answer">
+        Сайт был написан на PHP+HTML. В процессе работы активно исользовался javascript и jQuery. В качестве инструментов были задейстовованы Photoshop (макеты, бэкграунды, иконки), Dreamweaver, Notepad++, Sublime Text.
+      </div>
+    </div>
+    <div class="content__layout__include">
+      <h3>Другое</h3>
+      <div class="content__layout__include-question">
+        С какими ОС приходилось сталкиваться? Для каких целей вы их использовали?
+      </div>
+      <div class="content__layout__include-answer">
+        Все нижеперечисленные системы использовались как для работы, так и в личных целях:
+        <ul>
+          <li>MS Windows: 98, XP, Vista, 7;</li>
+          <li>Linux: Debian, Fedora, Mandriva, Ubuntu;</li>
+          <li>Mac OS X: 10.5-10.7.</li>
+        </ul>
+      </div>
+      <div class="content__layout__include-question">
+        Приходилось ли вам пользоваться системами контроля версий? Если да, то какими? Какая из них вам нравится больше всего?
+      </div>
+      <div class="content__layout__include-answer">
+        Из систем контроля версий пользовался только <a href="http://en.wikipedia.org/wiki/Git_%28software%29" target="_blank">Git</a>. Поэтому сравнить с чем-либо сложно.
+      </div>
+      <div class="content__layout__include-question">
+        Использовали ли вы системы постановки и ведения задач?
+      </div>
+      <div class="content__layout__include-answer">
+        Ранее использовалась система "Мегаплан", но позже было решено перейти на Redmine. Для личных задач активно пользуюсь Google Tasks.
+      </div>
+      <div class="content__layout__include-question">
+        Какие полезные для фронтенд-разработчика ресурсы вы используете и можете посоветовать?
+      </div>
+      <div class="content__layout__include-answer">
+        Ресурсы по HTML, CSS, js, jQuery:
+      <ul>
+        <li><a href="http://www.xiper.net/" target="_blank">xiper.net</a> - HTML и CSS приёмы;</li>
+        <li><a href="http://htmlbook.ru/" target="_blank">htmlbook.ru</a> - справочник по HTML, CSS;</li>
+        <li><a href="http://jquery.page2page.ru/tags/ifr.html" target="_blank">page2page.ru</a> - справочник по jQuery;</li>
+        <li><a href="http://css-tricks.com/" target="_blank">css-tricks.com</a> - уроки по CSS;</li>
+        <li><a href="http://www.jquerythisplugin.com/" target="_blank">jquerythisplugin.com</a> плагины jQuery;</li>
+        <!--<li><a href="http://www.fontsquirrel.com/fontface/generator" target="_blank">fontsquirrel.com</a> - генератор шрифтов;</li>-->
+        <li><a href="http://webdesignledger.com/tools/8-free-tools-for-testing-website-speed" target="_blank">webdesignledger.com</a> - инструменты для тестирования скорости работы сайта;</li>
+        <li><a href="http://www.zfort.com.ua/company/tools/" target="_blank">zfort.com.ua</a> - коллекция инструментов для различных задач;</li>
+        <li><a href="http://www.artlebedev.ru/tools/technogrette/" target="_blank">artlebedev.ru/tools/technogrette/</a> - статьи о HTML, CSS, js от студии Лебедева.</li>
+        <!--<li><a href="http://www.dafont.com/" target="_blank">dafont.com</a> - коллекция шрифтов</li>-->
+      </ul>
+      </div>
+      <div class="content__layout__include-question">
+        Работали ли вы где-нибудь? Какие у вас были должностные обязанности? Есть ли опыт работы в команде?
+      </div>
+      <div class="content__layout__include-answer">
+      <h4>Mail.ru</h4>
+        Спам-аналитик. Работа с большими объёмами текстовой и графической информации. Сбор статистики для анализа массовых рассылок, выявление и блокирование вредоносных и спам-рассылок, борьба с мошенниками, добавление сигнатур в базу. Написание технической документации (docs, wiki). Обучение новых сотрудников.
+      </div>
+      <div class="content__layout__include-answer">
+      <h4>Directgroup.org</h4>
+        Web-master. Дизайн и вёрстка email рассылок, landing page, интернет-магазинов, сайтов внутреннего пользования. Работа в команде с PHP-программистом.
+      </div>
+    </div>
+  </div>
+  
+  <div class="content__layout"><!-- TECHNICAL -->
+    <h2><a name="technical"><img src="img/icons/services.png" width="26" height="26" alt="tech" title="technical" /> Технические задания</a></h2>
+    <div class="content__layout__include">
+      <h3>1</h3>
+      <div class="content__layout__include-question">
+        Перечислите известные вам инструменты и приёмы для отладки кода в разных браузерах.
+      </div>
+      <div class="content__layout__include-answer">
+        Для отладки HTML, CSS и Javascript использую:
+      <ul>
+        <li>- Firefox: Firebug + FireCookie + Firefocus;</li>
+        <li>- Chrome: Firebug Lite, встроенный Developer Tools;</li>
+        <li>- Opera: Firebug Lite, Dragonfly;</li>
+        <li>- Safari: Drosera;</li>
+        <li>- IE: Developer Tools (F12).</li>
+      </ul>
+      </div>
+    </div>
+    <div class="content__layout__include">
+      <h3>2</h3>
+      <div class="content__layout__include-question">
+        Опишите своими словами, что происходит в браузерах при клике на ссылку yandex.ru (полнота ответа – на ваше усмотрение). 
+      </div>
+      <div class="content__layout__include-answer">
+        пыщь пыщь
+      </div>
+    </div>
+    <div class="content__layout__include">
+      <h3>4</h3>
+      <div class="content__layout__include-question">
+        Найдите все текстовые файлы (*.txt), в имени которых содержится «yandex», а в содержимом — «школа фронтенд-разработки». (предполагается работа с командной строкой)
+      </div>
+      <div class="content__layout__include-answer">
+        1-й вариант:
+        <div class="content__layout__include-answer__code">grep -e "школа фронтенд-разработки" *yandex*.txt</div>
+        2-й вариант:
+        <div class="content__layout__include-answer__code">find . -name "*yandex*.txt" -exec grep "школа фронтенд-разработки" '{}' \; -print</div>
+      </div>
+    </div>
+    <div class="content__layout__include">
+      <h3>6</h3>
+      <div class="content__layout__include-question">
+        Расскажите, в каком объёме и при каких обстоятельствах вы изучали следующие темы: языки программирования (императивные/декларативные, разные системы типов), структуры (классы, структуры данных, примитивные типы), парадигмы (события, ООП, параллельность/асинхронность, кеширование), алгоритмы (парсинг, сортировка, поиск), паттерны.
+      </div>
+      <div class="content__layout__include-answer">
+        В школьной и университетской программе изучались языки Turbo Pascal и C++. Самостоятельно изучались HTML, javascript, PHP. Обучение проходило, в основном, по самоучителям, видеоурокам, а отработка на реальных проектах (ezoplanet.ru, различные landing page, сайты внутреннего пользования компании).
+      </div>
+    </div>
+  </div>
+  
+  <div class="lepra"><img src="img/lepra.png" width="48" height="47" /></div>
+  
+  <div class="leprobear"><img src="img/leprobear.png" width="479" height="383" title="Медвед" alt="bear" class="leprobear__img" /></div>
+  
+  
+  </div><!-- END .content -->
+
+  <div class="footer noprint">  
+  <p>&copy; 2012 Yuri Dmitrienko</p>
+  <!-- END .footer --></div>
+<!-- END .container --></div>
+
+<script type="text/javascript">
+// скрываем/раскрываем блоки с анкетой:
+  $("h2").bind('click', function(){
+  $(this).parent().find(".content__layout__include").slideToggle(200); 
+  return false;
+  });
+
+// показываем/скрываем медведя по клику на лепромаску:
+  $(".lepra").bind('click', function(){
+  $(this).parent().find(".leprobear").addClass("leprobear__show").slideToggle(200); 
+  return false;
+  });
+
+// убираем медведя по клику:
+  $(".leprobear").bind('click', function(){
+  $(this).hide(); 
+  return false;
+  });
+</script>
+
+</body>
+</html>
