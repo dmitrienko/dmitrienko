@@ -154,7 +154,8 @@ a:active, a:focus {
 
 .menu__spacer {
 	display: none;
-    height: 61px;
+    height: 46px;
+	width: 100%;
 }
 
 .menu__top {

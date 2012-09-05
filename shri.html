@@ -52,8 +52,8 @@
 <script type="text/javascript">
 var menu__top = 0;
 $(document).ready(function(){
-  menu__top = $('.menu').offset().top + 20;
-  $("#menu__spacer").css('height',($('.menu').height()*1 + 20));
+  menu__top = $('.menu').offset().top;
+  $("#menu__spacer").css('height',($('.menu').height()*1));
   });
   $(window).scroll(function() {
   if ($(this).scrollTop() > menu__top)
@@ -79,7 +79,7 @@ $(document).ready(function(){
   <img src="img/header.png" alt="Yuri_Dmitrienko" name="Yuri_Dmitrienko" width="960" height="85"  />
 </div><!-- END .header -->  
   
-  <!--<div id="menu__spacer"></div>-->
+  <div id="menu__spacer"></div>
   
   <nav class="noprint">
     <div class="menu noprint">
@@ -285,17 +285,12 @@ $(document).ready(function(){
   return false;
   });
 
-// показываем/скрываем медведя по клику на лепромаску:
-  $(".lepra").bind('click', function(){
-  $(this).parent().find(".leprobear").addClass("leprobear__show").slideToggle(200); 
-  return false;
-  });
+// показываем/убираем медведя по наведению курсора на лепромаску:
+  $(".lepra").bind("mouseenter mouseleave", function(){
+  $(".leprobear").slideToggle(200); 
+  return false;}); 
 
-// убираем медведя по клику:
-  $(".leprobear").bind('click', function(){
-  $(this).hide(); 
-  return false;
-  });
+
 </script>
 
 </body>
